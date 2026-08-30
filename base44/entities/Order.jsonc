@@ -1,0 +1,37 @@
+{
+  "name": "Order",
+  "type": "object",
+  "properties": {
+    "subject": {
+      "type": "string",
+      "enum": [
+        "human",
+        "pet"
+      ],
+      "default": "human"
+    },
+    "medicine": {
+      "type": "string",
+      "required": true
+    },
+    "quantity": {
+      "type": "integer",
+      "default": 1
+    },
+    "address": {
+      "type": "string"
+    },
+    "prescription_url": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "placed",
+        "dispatched",
+        "delivered"
+      ],
+      "default": "placed"
+    }
+  }
+}
