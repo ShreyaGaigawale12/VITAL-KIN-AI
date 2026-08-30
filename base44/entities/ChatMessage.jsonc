@@ -1,0 +1,42 @@
+{
+  "name": "ChatMessage",
+  "type": "object",
+  "properties": {
+    "role": {
+      "type": "string",
+      "enum": [
+        "user",
+        "assistant"
+      ],
+      "required": true
+    },
+    "content": {
+      "type": "string",
+      "required": true
+    },
+    "subject": {
+      "type": "string",
+      "enum": [
+        "human",
+        "pet"
+      ],
+      "default": "human"
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "green",
+        "yellow",
+        "red",
+        "none"
+      ],
+      "default": "none"
+    },
+    "painLevel": {
+      "type": "integer"
+    },
+    "image_url": {
+      "type": "string"
+    }
+  }
+}
