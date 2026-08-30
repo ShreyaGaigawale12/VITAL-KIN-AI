@@ -1,0 +1,38 @@
+{
+  "name": "Vital",
+  "type": "object",
+  "properties": {
+    "subject": {
+      "type": "string",
+      "enum": [
+        "human",
+        "pet"
+      ],
+      "default": "human"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "heart_rate",
+        "spo2",
+        "steps",
+        "fall"
+      ],
+      "required": true
+    },
+    "value": {
+      "type": "number"
+    },
+    "unit": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string",
+      "enum": [
+        "manual",
+        "watch"
+      ],
+      "default": "manual"
+    }
+  }
+}
