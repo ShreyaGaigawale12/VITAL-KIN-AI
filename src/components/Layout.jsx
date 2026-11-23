@@ -3,6 +3,7 @@ import { Sun, Settings as SettingsIcon } from "lucide-react";
 import { useTheme } from "@/lib/useTheme";
 import BottomNav from "@/components/BottomNav";
 import SettingsDialog from "@/components/SettingsDialog";
+import TermsDialog from "@/components/TermsDialog";
 import { useState } from "react";
 
 export default function Layout() {
@@ -55,6 +56,7 @@ export default function Layout() {
       </main>
 
       <BottomNav />
+      <TermsDialog />
       <SettingsDialog open={settingsOpen} onClose={() => setSettingsOpen(false)} />
     </div>
   );
