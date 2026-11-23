@@ -1,0 +1,34 @@
+{
+  "name": "Household",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "relation": {
+      "type": "string"
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "human",
+        "pet"
+      ],
+      "default": "human"
+    },
+    "blood_type": {
+      "type": "string"
+    },
+    "conditions": {
+      "type": "string"
+    },
+    "medications": {
+      "type": "string"
+    },
+    "emergency_contact": {
+      "type": "string"
+    }
+  },
+  "required": []
+}
