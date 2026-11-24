@@ -1,0 +1,31 @@
+{
+  "name": "MedicalID",
+  "type": "object",
+  "properties": {
+    "full_name": {
+      "type": "string",
+      "required": true
+    },
+    "blood_type": {
+      "type": "string"
+    },
+    "allergies": {
+      "type": "string"
+    },
+    "conditions": {
+      "type": "string"
+    },
+    "emergency_contact": {
+      "type": "string"
+    },
+    "pet_breed": {
+      "type": "string"
+    },
+    "pet_meds": {
+      "type": "string"
+    },
+    "vet_contact": {
+      "type": "string"
+    }
+  }
+}
