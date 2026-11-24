@@ -1,0 +1,35 @@
+{
+  "name": "Pet",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "species": {
+      "type": "string",
+      "enum": [
+        "dog",
+        "cat",
+        "bird",
+        "other"
+      ],
+      "default": "dog"
+    },
+    "breed": {
+      "type": "string"
+    },
+    "age": {
+      "type": "string"
+    },
+    "weight": {
+      "type": "string"
+    },
+    "vet_contact": {
+      "type": "string"
+    },
+    "medications": {
+      "type": "string"
+    }
+  }
+}
