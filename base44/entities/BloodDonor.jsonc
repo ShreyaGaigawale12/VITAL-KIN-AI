@@ -1,0 +1,25 @@
+{
+  "name": "BloodDonor",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "blood_type": {
+      "type": "string",
+      "required": true
+    },
+    "city": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "available": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": []
+}
