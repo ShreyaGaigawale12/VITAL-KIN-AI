@@ -1,0 +1,48 @@
+{
+  "name": "Appointment",
+  "type": "object",
+  "properties": {
+    "subject": {
+      "type": "string",
+      "enum": [
+        "human",
+        "pet"
+      ],
+      "default": "human"
+    },
+    "patient_name": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "in-person",
+        "video"
+      ],
+      "default": "in-person"
+    },
+    "specialty": {
+      "type": "string"
+    },
+    "provider": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "time": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "requested",
+        "confirmed",
+        "cancelled"
+      ],
+      "default": "requested"
+    }
+  }
+}
